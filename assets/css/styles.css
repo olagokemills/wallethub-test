@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Proxima Regular";
+    background-color: #f1f5f8;
+}
+h1,h2,h3,h4{
+    font-family: "Proxima Bold";
+}
+.header{
+    background-color: #23123a;
+    height: 80vh;
+}
+.header_bar{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #fff;
+    position: fixed;
+    top: 3rem;
+    font-family: 'Proxima Bold';
+}
+.header_bar div{
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+}
+.header_bar div:nth-child(2) {
+    border-right: 1px solid #c4c4c4;
+    border-left: 1px solid #c4c4c4;
+  }
+.header_text-area
+{
+    padding-top: 10rem;
+}
+.header_text-area h1{
+    font-size: 7rem;
+    color: #fff;
+}
+.info_card{
+    background-color: #fff;
+    padding: 2rem;
+}
+.info_card-upper{
+    display: flex;
+    justify-content: space-between;
+}
+.info_card-body{
+    display: flex;
+    justify-content: space-between;
+}
+.info_card-body img{
+    width: 250px;
+}
+.btn-pills{
+    background-color: #5ad8d1;
+    border-radius: 15px;
+    color: #fff;
+    width: 120px;
+}
+.btn-apply{
+    border-radius: 5px;
+    color:#fff;
+    background-color: #fa6e3d;
+    width: 100%;
+}
+.text-link{
+    color: #1294f6;
+}
+hr{
+    border-top: 0.8px solid #000;
+}
+.card-img{
+    width: 100%;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:999;
+  }
+
+@media only screen and (max-width: 426px) {
+    .info_card-header{
+        font-size: 1.5rem;
+    }
+    .header_text-area h1{
+        font-size: 3.4rem;
+    }
+    .info_card-review{
+        display: none;
+    }
+    .header_bar-nav{
+        display: none;
+    }
+  }
